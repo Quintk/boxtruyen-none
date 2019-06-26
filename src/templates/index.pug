@@ -1,0 +1,149 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.truyenhaynhat
+		.container#intro-index
+			.row.title
+				p Truyện hay nhất
+			.row
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/dechedaiviet.png", alt="")
+						figcaption
+							h5 Đế Chế Đại Việt
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/bosshungdu.png", alt="")
+						figcaption
+							h5 Boss Hung Dữ - Ông Xã Kết Hôn đi
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/tongtaibaba.png", alt="")
+						figcaption
+							h5 Tổng tài BaBa: Mami giận thật rồi!
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/thithiendao.png", alt="")
+						figcaption
+							h5 Thí Thiên Dao
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/chongyeulaquy.png", alt="")
+						figcaption
+							h5 Chồng Yêu Là Quỷ
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/tongtaibaba.png", alt="")
+						figcaption
+							h5 Tổng tài BaBa: Mami giận thật rồi!
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/docton.png", alt="")
+						figcaption
+							h5 Tổng tài BaBa: Mami giận thật rồi!
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/huyenthienhonton2.png", alt="")
+						figcaption
+							h5 Huyền Thiên Hồn Tôn
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/bosshungdu3.png", alt="")
+						figcaption
+							h5 Boss Hung Dữ - Ông Xã Kết Hôn đi
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/docton.png", alt="")
+						figcaption
+							h5 Tổng tài BaBa: Mami giận thật rồi!
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/ketrommo.png", alt="")
+						figcaption
+							h5 Kẻ Trộm Mộ
+							p.chuong Chương 2355
+							time 9 phút trước
+				.col-2.product
+					figure
+						.blockimg
+							img(src="./img/ketrommo.png", alt="")
+						figcaption
+							h5 Kẻ Trộm Mộ
+							p.chuong Chương 2355
+							time 9 phút trước
+	section.truyenmoinhat
+		.container
+			.col-md-8
+				.row.title
+					p Truyện Mới Nhất
+				.col-md-4
+					.row
+						a(href="#") Bảy Thanh Hung Giản 
+						a(href="#") Vĩ Ngư
+					.row
+						a(href="#") Bảy Thanh Hung Giản
+						a(href="#") Vĩ Ngư
+					.row
+						a(href="#") Bảy Thanh Hung Giản
+						a(href="#") Vĩ Ngư
+					.row
+						a(href="#") Bảy Thanh Hung Giản
+						a(href="#") Vĩ Ngư
+					.row
+						a(href="#") Bảy Thanh Hung Giản
+						a(href="#") Vĩ Ngư
+				.col-md-4
+					p ăduiqwkn
+			.col-md-4
+				.row.title
+					p Truyện Đang Đọc
+	section.home-clients.mt-5
+		.container
+			.row
+				.col
+					.owl-carousel.owl-theme
+						- for(x=1;x<10;x++)
+							.item
+								if (x < 7)
+									img(src="./img/clients_"+x+".png", alt="")
+								else
+									img(src="./img/clients_"+(x-3)+".png", alt="")

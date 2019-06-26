@@ -1,0 +1,30 @@
+<!-- ////////////// HEADER ////////////// -->
+header.bg-light
+	.container
+		nav.navbar.navbar-expand-lg.navbar-light
+			a.navbar-brand(href="#") 
+				img(src="./img/logo.png", alt="Logo")
+			//- Đây là nút sẽ hiển thị trong mobile
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+				span.fa.fa-bars
+			#fullStackMenu.collapse.navbar-collapse
+				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
+				.mr-auto
+				ul.navbar-nav
+					//- li.nav-item.active
+					//- 	a.nav-link(href="index.html")
+					//- 		| Trang chủ
+					li.nav-item.dropdown.active
+						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Danh mục
+						.dropdown-menu(aria-labelledby="dropdownFS")
+							a.dropdown-item(href="#") Truyện
+							a.dropdown-item(href="#") Truyện 
+					li.nav-item
+						a.nav-link(href="services.html") Biểu đồ hàng đầu
+					li.nav-item
+						a.nav-link(href="services.html") Mới phát hành
+				form.form-inline.my-2.my-lg-0
+					input.form-control.mr-sm-2(type='search', placeholder='Tìm kiếm', aria-label='Search')
+					button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Tìm kiếm
+
+<!-- ////////////// HEADER ////////////// -->

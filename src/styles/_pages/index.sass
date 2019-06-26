@@ -1,0 +1,72 @@
+/////////////////////////////////
+// Phần truyen hay nhất
+/////////////////////////////////
+.truyenhaynhat
+	#intro-index
+		.title
+			color: #ec268f
+			font-size: 27px
+		.product
+			figure
+				.blockimg
+					+bor-rad(0px)
+					overflow: hidden
+					img
+						width: 100%
+				figcaption 
+					margin-top: 1rem
+					h5 
+						+fz(1.1rem)
+						margin-bottom: 0
+					time 
+						+fz(.85rem)
+						color: darken($whites,30%)
+					p 
+						margin-top: .5rem
+						color: darken($whites,50%)
+
+
+
+/////////////////////////////////
+// Phần Truyện mới nhất
+/////////////////////////////////
+
+.truyenmoinhat
+	.title
+		color: #434343
+		font-size: 27px
+	.item 
+		figure
+			.blockimg
+				+bor-rad(10px)
+				overflow: hidden
+				img
+					width: 100%
+			figcaption 
+				margin-top: 1rem
+				h3 
+					+fz(1.1rem)
+					margin-bottom: 0
+				time 
+					+fz(.85rem)
+					color: darken($whites,30%)
+				p 
+					margin-top: .5rem
+					color: darken($whites,50%)
+/////////////////////////////////
+// Phần News
+/////////////////////////////////
+
+.home-clients
+	.owl-carousel
+		.item 
+			+pad(.5rem)
+		// Phần Control
+		.owl-nav
+			margin-bottom: 2rem
+			button 
+				i 
+					display: block
+					width: 2rem
+					height: 2rem
+					+lh(2rem)
